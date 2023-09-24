@@ -1,0 +1,602 @@
+{
+    "intents": [
+      {
+        "name": "greeting",
+        "patterns": [
+          "Hello",
+          "Hi",
+          "Hey",
+          "Greetings"
+        ],
+        "responses": [
+          "Hello! How can I assist you today?",
+          "Hi there! How can I help you with Ayurveda?",
+          "Hey! How can I assist you on your Ayurvedic journey?",
+          "Greetings! How can I provide information about Ayurveda?"
+        ]
+      },
+      {
+        "name": "cure_common_cold",
+        "patterns": [
+          "How to cure a common cold in Ayurveda?",
+          "Ayurvedic remedies for common cold",
+          "Natural remedies for a cold"
+        ],
+        "responses": [
+          "Ayurveda recommends herbal teas with ginger and honey to relieve common cold symptoms.",
+          "Inhaling steam infused with eucalyptus oil can also help clear nasal congestion.",
+          "Rest, warm soups, and staying hydrated are essential for a speedy recovery."
+        ]
+      },
+      {
+        "name": "cure_digestive_issues",
+        "patterns": [
+          "How to cure digestive issues with Ayurveda?",
+          "Ayurvedic remedies for indigestion",
+          "Natural remedies for bloating"
+        ],
+        "responses": [
+          "To improve digestion, Ayurveda suggests consuming warm water with lemon and ginger before meals.",
+          "Herbs like fennel, cumin, and coriander can be used to alleviate bloating and gas.",
+          "A balanced diet and mindful eating habits are key to maintaining good digestive health."
+        ]
+      },
+      {
+        "name": "cure_stress_and_anxiety",
+        "patterns": [
+          "How to cure stress and anxiety with Ayurveda?",
+          "Ayurvedic remedies for reducing stress",
+          "Natural anxiety relief in Ayurveda"
+        ],
+        "responses": [
+          "Ayurveda recommends stress reduction through daily meditation and mindfulness practices.",
+          "Herbs like ashwagandha and brahmi are known for their calming effects on the mind.",
+          "A balanced lifestyle, regular exercise, and a nourishing diet can also help manage stress and anxiety."
+        ]
+      },
+      {
+        "name": "cure_skin_issues",
+        "patterns": [
+          "How to cure common skin issues with Ayurveda?",
+          "Ayurvedic remedies for acne",
+          "Natural solutions for glowing skin"
+        ],
+        "responses": [
+          "For acne, Ayurveda suggests using neem-based skincare products and maintaining a clean diet.",
+          "Turmeric and aloe vera can be applied topically to promote healthy and glowing skin.",
+          "Balancing your doshas and staying hydrated are crucial for skin health in Ayurveda."
+        ]
+      },
+      {
+        "name": "cure_headaches",
+        "patterns": [
+          "How to cure headaches in Ayurveda?",
+          "Ayurvedic remedies for migraine",
+          "Natural headache relief"
+        ],
+        "responses": [
+          "Ayurveda recommends a head massage with warm sesame oil to relieve headaches.",
+          "Herbs like peppermint and lavender can be used in aromatherapy for migraine relief.",
+          "Avoiding trigger foods and practicing stress management techniques can help prevent headaches."
+        ]
+      },
+
+      {
+        "name": "cure_insomnia",
+        "patterns": [
+          "How to cure insomnia with Ayurveda?",
+          "Ayurvedic remedies for sleep problems",
+          "Natural solutions for better sleep"
+        ],
+        "responses": [
+          "Ayurveda recommends a calming bedtime routine, including warm milk with a pinch of nutmeg.",
+          "Herbs like valerian root and chamomile tea can help improve sleep quality.",
+          "Avoiding caffeine and electronic devices before bedtime is essential for a good night's sleep."
+        ]
+      },
+      {
+        "name": "cure_joint_pain",
+        "patterns": [
+          "How to cure joint pain in Ayurveda?",
+          "Ayurvedic remedies for arthritis",
+          "Natural ways to relieve joint pain"
+        ],
+        "responses": [
+          "Ayurveda suggests applying warm sesame oil to affected joints and gentle massage.",
+          "Turmeric, ginger, and boswellia supplements can help reduce joint inflammation.",
+          "Maintaining a balanced diet and regular exercise can improve joint health in Ayurveda."
+        ]
+      },
+      {
+        "name": "cure_hair_loss",
+        "patterns": [
+          "How to cure hair loss with Ayurveda?",
+          "Ayurvedic remedies for hair growth",
+          "Natural solutions for preventing hair fall"
+        ],
+        "responses": [
+          "Ayurveda recommends scalp massages with coconut or amla oil to promote hair growth.",
+          "Herbs like bhringraj and hibiscus can be used in natural hair masks and shampoos.",
+          "A diet rich in protein and iron, along with stress reduction, can help prevent hair loss in Ayurveda."
+        ]
+      },
+      {
+        "name": "cure_allergies",
+        "patterns": [
+          "How to cure allergies with Ayurveda?",
+          "Ayurvedic remedies for allergic reactions",
+          "Natural ways to alleviate allergy symptoms"
+        ],
+        "responses": [
+          "Ayurveda suggests avoiding allergenic foods and following a seasonal diet.",
+          "Neti pot irrigation with saline water can help clear nasal passages during allergy season.",
+          "Herbs like stinging nettle and quercetin may provide relief from allergy symptoms."
+        ]
+      },
+      {
+        "name": "cure_weight_management",
+        "patterns": [
+          "How to manage weight with Ayurveda?",
+          "Ayurvedic remedies for weight loss",
+          "Natural solutions for maintaining a healthy weight"
+        ],
+        "responses": [
+          "Ayurveda emphasizes a balanced diet tailored to your dosha type for weight management.",
+          "Regular exercise, mindful eating, and herbs like guggul can support healthy weight loss.",
+          "Consulting an Ayurvedic practitioner for personalized weight management recommendations is advisable."
+        ]
+      },
+      {
+        "name": "cure_indigestion",
+        "patterns": [
+          "How to cure indigestion with Ayurveda?",
+          "Ayurvedic remedies for stomach upset",
+          "Natural solutions for indigestion relief"
+        ],
+        "responses": [
+          "Ayurveda recommends drinking ginger tea or chewing fennel seeds to ease indigestion.",
+          "Herbs like triphala and ajwain can also help improve digestion and relieve indigestion symptoms.",
+          "Avoiding heavy meals and overeating is essential for preventing indigestion in Ayurveda."
+        ]
+      },
+      {
+        "name": "cure_anemia",
+        "patterns": [
+          "How to cure anemia with Ayurveda?",
+          "Ayurvedic remedies for low hemoglobin",
+          "Natural ways to increase iron levels"
+        ],
+        "responses": [
+          "Ayurveda suggests consuming iron-rich foods like spinach, dates, and sesame seeds.",
+          "Cooking in iron utensils can help increase iron content in your meals.",
+          "Herbs like ashwagandha and bhringraj can be used to improve overall health and energy levels."
+        ]
+      },
+      {
+        "name": "cure_respiratory_issues",
+        "patterns": [
+          "How to cure respiratory issues with Ayurveda?",
+          "Ayurvedic remedies for asthma",
+          "Natural solutions for better lung health"
+        ],
+        "responses": [
+          "Ayurveda recommends steam inhalation with eucalyptus oil to ease respiratory congestion.",
+          "Herbs like licorice root and vasa can be used to support lung function in Ayurveda.",
+          "Practicing deep breathing exercises and avoiding allergens can help manage respiratory conditions."
+        ]
+      },
+      {
+        "name": "cure_diabetes",
+        "patterns": [
+          "How to cure diabetes with Ayurveda?",
+          "Ayurvedic remedies for managing blood sugar",
+          "Natural solutions for diabetes control"
+        ],
+        "responses": [
+          "Ayurveda emphasizes a low-glycemic diet with whole grains and bitter gourd for diabetes management.",
+          "Herbs like fenugreek and cinnamon may help improve insulin sensitivity.",
+          "Regular exercise and stress reduction are essential for managing diabetes in Ayurveda."
+        ]
+      },
+      {
+        "name": "cure_hypertension",
+        "patterns": [
+          "How to cure hypertension with Ayurveda?",
+          "Ayurvedic remedies for high blood pressure",
+          "Natural ways to lower blood pressure"
+        ],
+        "responses": [
+          "Ayurveda recommends a low-sodium diet with herbs like garlic and hawthorn for hypertension management.",
+          "Practicing yoga and meditation can help reduce stress and support heart health.",
+          "Consulting an Ayurvedic practitioner for personalized hypertension recommendations is advisable."
+        ]
+      }, {
+        "name": "cure_anxiety",
+        "patterns": [
+          "How to cure anxiety with Ayurveda?",
+          "Ayurvedic remedies for anxiety relief",
+          "Natural solutions for calming the mind"
+        ],
+        "responses": [
+          "Ayurveda recommends meditation, deep breathing exercises, and ashwagandha to calm anxiety.",
+          "Herbs like brahmi and shankhpushpi can be used to soothe the mind and reduce stress.",
+          "Maintaining a regular daily routine and getting enough rest are important for managing anxiety in Ayurveda."
+        ]
+      },
+      {
+        "name": "cure_acid_reflux",
+        "patterns": [
+          "How to cure acid reflux with Ayurveda?",
+          "Ayurvedic remedies for heartburn",
+          "Natural solutions for acid reflux relief"
+        ],
+        "responses": [
+          "Ayurveda suggests consuming cooling foods like cucumber and aloe vera to alleviate acid reflux.",
+          "Herbs like licorice and slippery elm can be used to soothe the digestive tract.",
+          "Eating smaller, more frequent meals and avoiding spicy and greasy foods are recommended for acid reflux management."
+        ]
+      }, {
+        "name": "cure_premenstrual_syndrome",
+        "patterns": [
+          "How to cure premenstrual syndrome (PMS) with Ayurveda?",
+          "Ayurvedic remedies for PMS relief",
+          "Natural solutions for managing PMS symptoms"
+        ],
+        "responses": [
+          "Ayurveda recommends yoga, meditation, and herbal teas like chamomile for PMS relief.",
+          "Herbs like chaste tree berry (vitex) and evening primrose oil may help balance hormones.",
+          "A balanced diet and reducing stress through self-care practices are important for managing PMS in Ayurveda."
+        ]
+      },
+      {
+        "name": "cure_insulin_resistance",
+        "patterns": [
+          "How to cure insulin resistance with Ayurveda?",
+          "Ayurvedic remedies for improving insulin sensitivity",
+          "Natural solutions for managing insulin resistance"
+        ],
+        "responses": [
+          "Ayurveda emphasizes a low-sugar, high-fiber diet with bitter melon and fenugreek for insulin resistance.",
+          "Herbs like cinnamon and gudmar may help improve insulin sensitivity.",
+          "Regular physical activity and maintaining a healthy body weight are essential for managing insulin resistance in Ayurveda."
+        ]
+      },
+      {
+        "name": "cure_skin_conditions",
+        "patterns": [
+          "How to cure skin conditions with Ayurveda?",
+          "Ayurvedic remedies for eczema and psoriasis",
+          "Natural solutions for healthy skin"
+        ],
+        "responses": [
+          "Ayurveda recommends using neem and turmeric pastes for topical application on skin conditions.",
+          "Herbs like manjistha and haridra can be taken internally to support skin health.",
+          "Balancing doshas and following a skin-friendly diet are key for managing skin conditions in Ayurveda."
+        ]
+      },{
+        "name": "cure_migraines",
+        "patterns": [
+          "How to cure migraines with Ayurveda?",
+          "Ayurvedic remedies for migraine relief",
+          "Natural solutions for reducing migraine pain"
+        ],
+        "responses": [
+          "Ayurveda recommends applying a paste of sandalwood and rosewater to the forehead during a migraine attack.",
+          "Herbs like feverfew and butterbur may help reduce the frequency and intensity of migraines.",
+          "Maintaining a regular sleep schedule and managing stress are important for migraine management in Ayurveda."
+        ]
+      },
+      {
+        "name": "cure_high_cholesterol",
+        "patterns": [
+          "How to cure high cholesterol with Ayurveda?",
+          "Ayurvedic remedies for lowering cholesterol levels",
+          "Natural solutions for healthy cholesterol"
+        ],
+        "responses": [
+          "Ayurveda suggests a diet low in saturated fats and high in fiber-rich foods like oats and barley for cholesterol management.",
+          "Herbs like guggul and garlic can be used to help lower cholesterol levels.",
+          "Regular physical activity and maintaining a healthy weight are important for cholesterol control in Ayurveda."
+        ]
+      },
+      {
+        "name": "cure_gastric_issues",
+        "patterns": [
+          "How to cure gastric issues with Ayurveda?",
+          "Ayurvedic remedies for gastric problems",
+          "Natural solutions for a healthy digestive system"
+        ],
+        "responses": [
+          "Ayurveda recommends consuming probiotic-rich foods like yogurt and buttermilk for gut health.",
+          "Herbs like cardamom and fennel seeds can be used to ease gastric discomfort.",
+          "Avoiding overeating and practicing mindful eating habits are essential for managing gastric issues in Ayurveda."
+        ]
+      },
+      {
+        "name": "cure_insomnia_natural",
+        "patterns": [
+          "How to cure insomnia naturally with Ayurveda?",
+          "Ayurvedic remedies for better sleep",
+          "Natural solutions for insomnia relief"
+        ],
+        "responses": [
+          "Ayurveda suggests a calming bedtime routine, including warm milk with a pinch of nutmeg and honey.",
+          "Herbs like valerian root and chamomile tea can help improve sleep quality naturally.",
+          "Creating a peaceful sleep environment and avoiding caffeine and electronic devices before bedtime are key for managing insomnia in Ayurveda."
+        ]
+      },
+      {
+        "name": "cure_hemorrhoids",
+        "patterns": [
+          "How to cure hemorrhoids with Ayurveda?",
+          "Ayurvedic remedies for piles",
+          "Natural solutions for hemorrhoid relief"
+        ],
+        "responses": [
+          "Ayurveda recommends a diet high in fiber and fluids to prevent constipation, a common cause of hemorrhoids.",
+          "Herbs like triphala and aloe vera can be used to soothe hemorrhoid symptoms.",
+          "Maintaining good hygiene and avoiding straining during bowel movements are important for managing hemorrhoids in Ayurveda."
+        ]
+      }, {
+        "name": "cure_fever",
+        "patterns": [
+          "How to cure fever with Ayurveda?",
+          "Ayurvedic remedies for reducing fever",
+          "Natural solutions for fever relief"
+        ],
+        "responses": [
+          "Ayurveda recommends drinking herbal teas made from tulsi (holy basil) and ginger to reduce fever.",
+          "Cooling foods like rice congee and yogurt can help lower body temperature during a fever.",
+          "Rest, hydration, and avoiding heavy meals are essential for managing fever in Ayurveda."
+        ]
+      },
+      {
+        "name": "fever_reducing_herbs",
+        "patterns": [
+          "Tell me about herbs for reducing fever in Ayurveda",
+          "Ayurvedic fever-reducing herbs",
+          "Natural remedies for fever using herbs"
+        ],
+        "responses": [
+          "Ayurveda suggests using herbs like neem, giloy (Tinospora cordifolia), and kutki to reduce fever.",
+          "These herbs have antipyretic properties and can help lower body temperature during fever.",
+          "Consulting an Ayurvedic practitioner for personalized herbal remedies is advisable."
+        ]
+      },
+      {
+        "name": "fever_management_tips",
+        "patterns": [
+          "Give me tips for managing fever in Ayurveda",
+          "Ayurvedic advice for fever management",
+          "How to take care of yourself during a fever"
+        ],
+        "responses": [
+          "During a fever, Ayurveda recommends staying in a cool and well-ventilated room.",
+          "Gently wiping the body with a cloth soaked in lukewarm water can help bring down fever.",
+          "If the fever persists or worsens, it's important to consult an Ayurvedic practitioner or medical professional."
+        ]
+      }, 
+      {
+        "name": "introduction",
+        "patterns": [
+          "Tell me about Ayurveda",
+          "What is Ayurveda?",
+          "Give me an overview of Ayurveda"
+        ],
+        "responses": [
+          "Ayurveda is an ancient system of medicine from India. It focuses on balance and holistic well-being.",
+          "Ayurveda, often called the 'Science of Life,' is a traditional system of medicine that emphasizes natural healing.",
+          "Ayurveda is a holistic approach to health that takes into account physical, mental, and spiritual well-being."
+        ]
+      },
+      {
+        "name": "dosha",
+        "patterns": [
+          "What are doshas?",
+         "dosha"
+        ],
+        "responses": [
+          "Doshas are fundamental energies in Ayurveda that influence our physical and mental characteristics.They are derived from the five elements: Earth, Water, Fire, Air, and Ether (Space)"
+          
+        ]
+      },
+      {
+        "name": "dosha_vata",
+        "patterns": [
+          "What is Vata dosha?",
+          "Explain Vata dosha",
+          "Tell me about Vata dosha characteristics"
+        ],
+        "responses": [
+          "Vata dosha is one of the three fundamental energies in Ayurveda.",
+          "It is associated with the air and ether elements and is responsible for governing movement and creativity.",
+          "Vata dosha individuals tend to be energetic, creative, and prone to imbalances related to excess cold, dryness, and irregularity."
+        ]
+      },
+      {
+        "name": "dosha_pitta",
+        "patterns": [
+          "What is Pitta dosha?",
+          "Explain Pitta dosha",
+          "Tell me about Pitta dosha characteristics"
+        ],
+        "responses": [
+          "Pitta dosha is one of the three doshas in Ayurveda.",
+          "It is related to the fire and water elements and is responsible for metabolism and digestion.",
+          "Pitta dosha individuals tend to have a strong digestion, be goal-oriented, and can experience imbalances related to excess heat, acidity, and irritability."
+        ]
+      }
+      ,
+      {
+        "name": "dosha_kapha",
+        "patterns": [
+          "What is Kapha dosha?",
+          "Explain Kapha dosha",
+          "Tell me about Kapha dosha characteristics"
+        ],
+        "responses": [
+          "Kapha dosha is one of the three doshas in Ayurveda.",
+          "It is linked to the earth and water elements and is associated with stability and nourishment.",
+          "Kapha dosha individuals tend to be calm, nurturing, and may experience imbalances related to excess heaviness, sluggishness, and congestion."
+        ]
+      }
+      
+      ,
+      {
+        "name": "treatment",
+        "patterns": [
+          "How is Ayurveda used for treatment?",
+          "Tell me about Ayurvedic treatments",
+          "What conditions can Ayurveda treat?"
+        ],
+        "responses": [
+          "Ayurveda uses a combination of diet, herbs, therapies, and lifestyle adjustments for treatment.",
+          "Ayurvedic treatments include Panchakarma, herbal remedies, and personalized wellness plans.",
+          "Ayurveda can address a wide range of conditions, from digestive issues to chronic illnesses."
+        ]
+      },
+      {
+        "name": "consultation",
+        "patterns": [
+          "How to consult an Ayurvedic practitioner?",
+          "Find me an Ayurvedic doctor",
+          "What to expect in an Ayurvedic consultation?"
+        ],
+        "responses": [
+          "To consult an Ayurvedic practitioner, search for qualified professionals in your area.",
+          "You can find Ayurvedic doctors through Ayurvedic clinics or online directories.",
+          "In an Ayurvedic consultation, expect questions about your health, lifestyle, and goals for personalized recommendations."
+        ]
+      },
+      {
+        "name": "herbal_remedies",
+        "patterns": [
+          "Tell me about herbal remedies in Ayurveda",
+          "What herbs can I use for digestion?",
+          "Give me Ayurvedic remedies for cold and flu"
+        ],
+        "responses": [
+          "Ayurveda relies on a vast array of herbs for various health concerns and imbalances.",
+          "For digestion, herbs like ginger, fennel, and triphala are commonly recommended.",
+          "Ayurvedic remedies for cold and flu may include tulsi, turmeric, and licorice."
+        ]
+      },
+      {
+        "name": "diet_recommendations",
+        "patterns": [
+          "What is the Ayurvedic diet?",
+          "Give me diet recommendations for balancing doshas",
+          "What foods should I avoid in Ayurveda?"
+        ],
+        "responses": [
+          "The Ayurvedic diet is based on your dosha type and emphasizes balance and seasonal eating.",
+          "To balance doshas, eat foods that pacify or reduce their qualities.",
+          "Avoid foods that aggravate your dosha or disrupt your body's balance."
+        ]
+      },
+      {
+        "name": "yoga_and_exercise",
+        "patterns": [
+          "How does Ayurveda recommend exercise?",
+          "Tell me about Ayurvedic yoga practices",
+          "What are some Ayurvedic exercise routines?"
+        ],
+        "responses": [
+          "Ayurveda recommends exercise that aligns with your dosha and body constitution.",
+          "Ayurvedic yoga practices, like Hatha and Kundalini, promote balance and well-being.",
+          "Exercise routines in Ayurveda should be gentle and in harmony with your dosha."
+        ]
+      },
+      {
+        "name": "stress_management",
+        "patterns": [
+          "How can Ayurveda help with stress management?",
+          "Give me stress relief techniques in Ayurveda",
+          "What herbs are good for reducing stress?"
+        ],
+        "responses": [
+          "Ayurveda offers stress management through lifestyle adjustments, meditation, and herbs.",
+          "Stress relief techniques include daily routines, mindfulness, and deep breathing.",
+          "Ashwagandha, Brahmi, and Jatamansi are herbs known for their stress-reducing properties in Ayurveda."
+        ]
+      },
+      {
+        "name": "ayurvedic_massage",
+        "patterns": [
+          "Tell me about Ayurvedic massage techniques",
+          "What are the benefits of Abhyanga?",
+          "How to do self-massage in Ayurveda?"
+        ],
+        "responses": [
+          "Ayurvedic massage uses specific oils and techniques to balance doshas and promote relaxation.",
+          "Abhyanga, or self-massage, improves circulation, nourishes the skin, and calms the mind.",
+          "You can do self-massage using warm oil, starting from the head and moving towards the feet."
+        ]
+      },
+      {
+        "name": "ayurvedic_principles",
+        "patterns": [
+          "Explain the fundamental principles of Ayurveda",
+          "What are the five elements in Ayurveda?",
+          "Tell me about the three doshas"
+        ],
+        "responses": [
+          "Ayurveda is based on the principles of the five elements (earth, water, fire, air, ether) and the doshas (Vata, Pitta, Kapha).",
+          "The doshas are unique combinations of the five elements, responsible for our physical and mental characteristics.",
+          "Understanding your dosha and maintaining doshic balance is key to Ayurvedic health."
+        ]
+      },
+      {
+        "name": "contraindications",
+        "patterns": [
+          "Are there any contraindications for Ayurvedic treatments?",
+          "What precautions should I take with Ayurvedic remedies?",
+          "Tell me about safety in Ayurveda"
+        ],
+        "responses": [
+          "Ayurvedic treatments may have contraindications depending on your individual health and conditions.",
+          "Always consult an Ayurvedic practitioner for personalized advice and to avoid potential risks.",
+          "Safety in Ayurveda includes using quality herbs, following recommended dosages, and monitoring for any adverse reactions."
+        ]
+      },
+      {
+        "name": "prakriti",
+        "patterns": [
+          "What is Prakriti in Ayurveda?",
+          "Explain my Prakriti",
+          "How does Prakriti influence health?"
+        ],
+        "responses": [
+          "Prakriti is your inherent constitution, determined at birth, and it influences your physical and mental tendencies.",
+          "Discovering your Prakriti helps customize Ayurvedic recommendations for optimal health.",
+          "Balancing your Prakriti leads to better overall well-being and harmony."
+        ]
+      },
+      {
+        "name": "Ayurvedic_products",
+        "patterns": [
+          "Tell me about Ayurvedic herbal products",
+          "Where can I buy Ayurvedic supplements?",
+          "Are there Ayurvedic beauty products?"
+        ],
+        "responses": [
+          "Ayurvedic herbal products include supplements, oils, and skincare items that promote health and well-being.",
+          "You can find Ayurvedic supplements in Ayurvedic stores or online retailers.",
+          "Ayurvedic beauty products are available, often containing natural ingredients to enhance your beauty naturally."
+        ]
+      },
+      {
+        "name": "Ayurveda_and_modern_medicine",
+        "patterns": [
+          "How does Ayurveda relate to modern medicine?",
+          "Is Ayurveda recognized by mainstream healthcare?",
+          "Can Ayurveda be integrated with conventional treatments?"
+        ],
+        "responses": [
+          "Ayurveda offers complementary approaches to modern medicine, focusing on holistic well-being.",
+          "Some aspects of Ayurveda are recognized and integrated into mainstream healthcare.",
+          "In certain cases, Ayurveda can be combined with conventional treatments under medical supervision."
+        ]
+      }
+    ]
+  }
